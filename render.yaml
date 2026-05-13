@@ -4,7 +4,7 @@ services:
     runtime: node
     plan: free
     rootDir: geo-places-backend
-    buildCommand: npm ci && npm run build
+    buildCommand: npm ci --include=dev && npm run build
     startCommand: npm run migration:run:prod && npm run start:prod
     envVars:
       - key: NODE_VERSION
@@ -28,7 +28,7 @@ services:
     name: geo-places-frontend
     runtime: static
     rootDir: frontend
-    buildCommand: npm ci && npm run build
+    buildCommand: npm ci --include=dev && npm run build
     staticPublishPath: dist
     envVars:
       - key: NODE_VERSION
