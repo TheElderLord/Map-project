@@ -1,0 +1,11 @@
+export enum PlaceType {
+  EVENT = 'EVENT',
+  RESTAURANT = 'RESTAURANT',
+  CAFE = 'CAFE',
+  PARK = 'PARK',
+  SHOP = 'SHOP',
+  HOTEL = 'HOTEL',
+  UNIVERSITY = 'UNIVERSITY',
+  HOSPITAL = 'HOSPITAL',
+  OTHER = 'OTHER',
+}
